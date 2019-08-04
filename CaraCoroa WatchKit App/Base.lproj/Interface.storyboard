@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CaraCoroa_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="0.80000000000000004" alignment="center" title="Sortear" id="G0Y-g1-vmD">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.2949122488" green="0.58325618509999999" blue="0.38428401950000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="buttonSortear" destination="AgC-eL-Hgc" id="nFc-B2-put"/>
+                            </connections>
+                        </button>
+                        <imageView width="1" height="0.69999999999999996" alignment="center" image="moeda-inicial" contentMode="scaleAspectFit" id="x2i-3o-l3V"/>
+                    </items>
+                    <color key="backgroundColor" red="0.38259077070000003" green="0.74259084460000002" blue="0.54932171110000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <edgeInsets key="margins" left="1" right="1" top="5" bottom="5"/>
+                    <connections>
+                        <outlet property="imgCaraCoroa" destination="x2i-3o-l3V" id="GRI-2n-85R"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
